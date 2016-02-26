@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= json.project.title %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="//cdn.livefyre.com/Livefyre.js"></script>
+    <%= t.include("partials/_head.html") %>
+  </head>
+  <body>
+
+    <%= t.include("./partials/_nav.html") %>
+
+    <div class="header">
+      <div class="title">
+        <span class="yellow">What does it mean<br>to fully fund</span><span class="orange">education?<div class="pointer"></div></span>
+      </div>
+    </div>
+
+    <section>
+      <%= markdown.part1 %>
+    </section>
+
+    <div class="header">
+      <div class="title">
+        <span class="yellow">What's the</span><br><span class="orange">McCleary case?<div class="pointer"></div></span>
+      </div>
+    </div>
+
+    <section>
+      <%= markdown.part2 %>
+    </section>
+
+    <div class="header">
+      <div class="title">
+        <span class="yellow">Why did the</span><br><span class="orange">McCleary coalition win?<div class="pointer"></div></span>
+      </div>
+    </div>
+
+    <section>
+      <%= markdown.part3 %>
+    </section>
+
+    <div class="header">
+      <div class="title">
+        <span class="yellow">What are levies and</span><br><span class="orange">why do they matter?<div class="pointer"></div></span>
+      </div>
+    </div>
+
+    <section>
+      <%= markdown.part4 %>
+    </section>
+
+    <div class="header">
+      <div class="title">
+        <span class="yellow">Why all the focus on</span><br><span class="orange">“basic” education?<div class="pointer"></div></span>
+      </div>
+    </div>
+
+    <section>
+      <%= markdown.part5 %>
+    </section>
+
+    <div class="header">
+      <div class="title">
+        <span class="yellow">How does the state decide how much</span><span class="orange">to give each school district?<div class="pointer"></div></span>
+      </div>
+    </div>
+
+    <section>
+      <%= markdown.part6 %>
+    </section>
+
+    <div class="header">
+      <div class="title">
+        <span class="yellow">So what does it mean to fully fund education in</span><span class="orange">Washington state?<div class="pointer"></div></span>
+      </div>
+    </div>
+
+    <section>
+      <%= markdown.part7 %>
+    </section>
+
+    <div class="header">
+      <div class="title">
+        <span class="yellow">So...</span><span class="orange">now what?<div class="pointer"></div></span>
+      </div>
+    </div>
+
+    <section>
+      <%= markdown.part8 %>
+    </section>
+    
+    <div class="comments" id="livefyre-app-custom-1456272446197"></div>
+
+    <script>
+      (function() {
+        Livefyre.require(['fyre.conv#3'], function(Conv) {
+          new Conv({
+            network: 'seattletimes.fyre.co'
+          }, [{
+            app: 'main',
+            siteId: '316317',
+            articleId: 'custom-1456272446197',
+            el: 'livefyre-app-custom-1456272446197',
+          }], function (widget) { });
+        });
+      }());
+    </script>
+
+    <script src="app.js" async></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_foot.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>

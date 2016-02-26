@@ -1,0 +1,162 @@
+@import "seattletimes";
+@import (inline) "npm://chartist/dist/chartist.min.css";
+
+@light: #fffdb3;
+@yellow: #EDDC4B;
+@orange: #F9A75F;
+
+body {
+  line-height: 1.8em;
+}
+
+.inline-img {
+  margin: auto;
+}
+
+.header {
+  background: @light;
+  font-size: 80px;
+  font-weight: bold;
+  height: 500px;
+  margin-bottom: 50px;
+
+  .title {
+    max-width: 1050px;
+    margin: auto;
+    padding-top: 5%;
+  }
+
+  .yellow, .orange {
+    line-height: 1.65em;
+    padding: 0 10px;
+  }
+  .pointer {
+    display: block;
+    background-color: @orange;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: -20%;
+    left: 50px;
+    transform: rotate(45deg);
+  }
+}
+
+.yellow {
+  background-color: @yellow;
+  padding: 0 5px;
+}
+.orange {
+  background-color: @orange;
+  position: relative;
+  padding: 0 5px;
+}
+
+.drop {
+  font-size: 80px;
+  font-weight: bold;
+  float: left;
+  vertical-align: top;
+  line-height: 1;
+  padding: 4px 14px 6px 10px;
+}
+
+.comments, section {
+  max-width: 1020px;
+  margin: auto;
+}
+
+section {
+  font-size: 20px;
+
+  > * {
+    width: 66%;
+
+    @media @tablet {
+      width: 100%;
+    }
+  }
+}
+
+aside.sidebar {
+  font-family: @df-sans;
+  font-weight: bold;
+  float: right;
+  width: 32%;
+  clear: both;
+  padding-left: 40px;
+
+  a {
+    color: darken(@orange, 20%);
+    transition: color .1s linear;
+
+    &:hover {
+      color: darken(@orange, 35%);
+    }
+  }
+}
+
+.block {
+  background: @light;
+  padding: 30px;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+
+  ul {
+    margin: 0;
+  }
+
+  .hed {
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+}
+
+.options {
+  .display-flex();
+}
+.option {
+  .flex(1);
+  background: @light;
+  display: block;
+  float: left;
+  padding: 25px 30px;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: center;
+  margin-right: 20px;
+
+  .bold {
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+}
+
+.top {
+  text-align: right;
+  font-family: @df-sans;
+  font-weight: bold;
+  color: @df-dark-gray;
+  padding-bottom: 30px;
+}
+
+// .ct-chart {
+//   font-family: @df-sans;
+
+//   .ct-vertical {
+//     font-size: 11px;
+//   }
+
+//   .ct-horizontal {
+//     font-weight: bold;
+//     padding-top: 5px;
+//   }
+
+//   .ct-bar {
+//     stroke-width: 30px;
+//     stroke: @orange;
+//   }
+// }
