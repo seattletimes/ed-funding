@@ -61,11 +61,33 @@ So how much will it cost to provide school staff with competitive salaries, redu
 
 It depends on whom you ask. Here are some examples: 
 
- 
-* According to some in the Legislature, the major remaining cost is staff compensation and that will cost at least $3.5 billion per biennium based on a June 2015 fiscal analysis &mdash; or about $1.76 billion a year.  
-* The Office of Superintendent of Public Instruction estimates it would cost at least $7.6 billion every biennium &mdash; or about $3.8 billion a year. That number doesn’t factor in capital costs, which would be separate.
-* Eden Mack, a leader in Washington’s Paramount Duty group, says the number is closer to $8 billion more per biennium for operations, or $4 billion a year &mdash; and that doesn’t count a one-time cost of $2 billion to build new classrooms to lower class sizes and support all-day kindergarten. She based her estimate on the state’s testimony from the McCleary case. 
-* Tom Ahearne, the lawyer representing the plaintiffs in the McCleary case, agrees with Eden Mack that it will cost at least $8 billion more per biennium, plus an additional $2 billion in capital costs for new K-3 classrooms and all-day kindergarten. But he also thinks the minimum should include two other things: First, cost-of-living increases for school staff, which a legislative working group has recommended. (And voters approved years ago, but lawmakers have not funded most years.) Second, other capital expenses, like renovating school buildings that are falling apart. He’s not sure how many additional dollars the cost-of-living raises and the other capital costs would add up to.
+<div class="estimates">
+  <div class="text">
+    <div class="first estimate scroll-aware" data-order="first">
+      <div class="money">$3.5 billion</div>
+      According to some in the Legislature, the major remaining cost is staff compensation and that will cost at least $3.5 billion per biennium based on a June 2015 fiscal analysis &mdash; or about $1.76 billion a year.  
+    </div>
+    <div class="second estimate scroll-aware" data-order="second">
+      <div class="money">$7.6 billion</div>
+      The Office of Superintendent of Public Instruction estimates it would cost at least $7.6 billion every biennium &mdash; or about $3.8 billion a year. That number doesn’t factor in capital costs, which would be separate.
+    </div>
+    <div class="third estimate scroll-aware" data-order="third">
+      <div class="money">$10 billion</div>
+      Eden Mack, a leader in Washington’s Paramount Duty group, says the number is closer to $8 billion more per biennium for operations, or $4 billion a year &mdash; and that doesn’t count a one-time cost of $2 billion to build new classrooms to lower class sizes and support all-day kindergarten. She based her estimate on the state’s testimony from the McCleary case. 
+    </div>
+    <div class="fourth estimate scroll-aware" data-order="fourth">
+      <div class="money">$10 billion +</div>
+      Tom Ahearne, the lawyer representing the plaintiffs in the McCleary case, agrees with Eden Mack that it will cost at least $8 billion more per biennium, plus an additional $2 billion in capital costs for new K-3 classrooms and all-day kindergarten. But he also thinks the minimum should include two other things: First, cost-of-living increases for school staff, which a legislative working group has recommended. (And voters approved years ago, but lawmakers have not funded most years.) Second, other capital expenses, like renovating school buildings that are falling apart. He’s not sure how many additional dollars the cost-of-living raises and the other capital costs would add up to.
+    </div>
+  </div>
+  <div class="bars">
+    <div class="indefinite bar" style="height: 100%" data-order="fourth"></div>
+    <div class="bar" style="height: 83%" data-order="third"></div>
+    <div class="bar" style="height: 63%" data-order="second"></div>
+    <div class="bar" style="height: 29%" data-order="first"></div> 
+  </div>
+</div>
+
 
 Why do the estimates differ so dramatically? The state Supreme Court’s job is to enforce the constitution, not write state budgets. That’s why the court hasn’t dictated a dollar amount for funding McCleary and why phrases like “fully funding education” and “paramount duty” are left up to interpretation. 
 

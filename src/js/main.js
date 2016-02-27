@@ -3,30 +3,31 @@ require("./lib/social");
 // var track = require("./lib/tracking");
 
 require("component-responsive-frame/child");
-// var Chartist = require("chartist");
+var qsa = require("./lib/qsa");
 
-// function commafy(num) {
-//   num = num.toString();
-//   if (num.length >= 4) {
-//     num = num.replace(/(\d)(?=(\d{3})+$)/g, '$1,');
-//   }
-//   return num;
-// }
+var sections = qsa(".scroll-aware");
 
-// var data = {
-//   labels: [2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014],
-//   series: [
-//     [6971.96, 7389.47, 7294.73, 7050.75, 6825.52, 6864.16, 6801.65, 7279]
-//   ]
-// };
-
-// Chartist.Bar('#ct-chart', data, {
-//   axisX: {
-//     showGrid: false
-//   },
-//   axisY: {
-//     labelInterpolationFnc: function(value) {
-//       return '$' + (commafy(value));
-//     }
-//   }
-// });
+window.addEventListener("scroll", function(e) {
+  var found = null;
+  var foundBar = null;
+  for (var i = 0; i < sections.length; i++) {
+    var section = sections[i];
+    var bounds = section.getBoundingClientRect();
+    if (bounds.bottom > 0 && bounds.top < window.innerHeight * 0.65) {
+      found = section;
+      qsa(".bar").forEach(function(bar) {
+        if (bar.getAttribute("data-order") == section.getAttribute("data-order")) {
+          foundBar = bar;
+        }
+      });
+    }
+    section.classList.remove("highlighted");
+    qsa(".bar").forEach(function(bar) {
+      bar.classList.remove("highlighted");
+    });
+  }
+  if (found) {
+    found.classList.add("highlighted");
+    foundBar.classList.add("highlighted");
+  }
+});

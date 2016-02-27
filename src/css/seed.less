@@ -135,6 +135,82 @@ aside.sidebar {
   }
 }
 
+.estimates {
+  position: relative;
+  width: 85%;
+  margin: 80px 0;
+
+  .text {
+    font-size: 18px;
+    line-height: 1.8em;
+
+    .estimate {
+      margin: 40px;
+      width: 40%;
+
+      &.first {
+        padding-top: 10%;
+      }
+
+      &.second {
+        margin-top: 60%;
+        width: 50%;
+      }
+
+      &.third {
+        margin-top: 70%;
+        width: 65%;
+      }
+
+      &.fourth {
+        margin-top: 30%;
+        width: 75%;
+      }
+
+      &.highlighted {
+        font-weight: bold;
+
+        .money {
+          color: darken(@orange, 20%);
+        }
+      }
+    }
+
+    .money {
+      color: @orange;
+      font-size: 35px;
+      padding-bottom: 8px;
+    }
+  }
+
+  .bars {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 50%;
+
+    .bar {
+      float: right;
+      background: @orange;
+      margin-left: 20px;
+      width: 19%;
+
+      &.indefinite {
+        background-image: linear-gradient(@orange, @orange, @orange, @orange, @orange, @orange, white);
+      }
+      
+      &.highlighted {
+        background: darken(@orange, 20%);
+
+        &.indefinite {
+          background-image: linear-gradient(darken(@orange, 20%), darken(@orange, 20%), darken(@orange, 20%), darken(@orange, 20%), darken(@orange, 20%), darken(@orange, 20%), white);
+        }
+      }
+    }
+  }
+}
+
 .top {
   text-align: right;
   font-family: @df-sans;
@@ -143,20 +219,3 @@ aside.sidebar {
   padding-bottom: 30px;
 }
 
-// .ct-chart {
-//   font-family: @df-sans;
-
-//   .ct-vertical {
-//     font-size: 11px;
-//   }
-
-//   .ct-horizontal {
-//     font-weight: bold;
-//     padding-top: 5px;
-//   }
-
-//   .ct-bar {
-//     stroke-width: 30px;
-//     stroke: @orange;
-//   }
-// }
