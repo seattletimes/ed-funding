@@ -5,17 +5,17 @@
       "path": "infernal-empire"
     },
     "live": {
-      "bucket": "",
-      "path": ""
+      "bucket": "projects.seattletimes.com",
+      "path": "2016/education-funding"
     }
   },
-  "title": "",
-  "description": "",
+  "title": "What does it mean to fully fund education?",
+  "description": "The answer is complicated, with &mdash; not surprisingly &mdash; a lot of politics involved.",
   "url": "",
   "slug": "",
   "tags": [],
-  "image": "assets/social.jpg",
+  "image": "assets/social_img.jpg",
   "sheets": [],
-  "production": false,
-  "embedded": true
+  "production": true,
+  "embedded": false
 }

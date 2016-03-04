@@ -1,7 +1,4 @@
-“Levy” is a wonky word for what’s essentially a tax that’s assessed, or levied, on the value of a taxpayer’s property.  Here’s an example of how levies work: A school district has to heat its buildings so students and teachers don’t freeze in the winter. Let’s say that costs $1,000 per school per year. But let’s also say the price of oil increases, therefore heating costs increase, and now the district has to pay $2,000 to heat each school. But the state doesn’t take the rising cost of oil into account. It continues to give just $1,000 to heat a school, even though nothing is more basic than a warm classroom. So how does a district cover the extra cost?  Through local property tax levies, which technically are only supposed to be used for extra things like extracurricular activities or extra class periods in high school.
-
-
-<img src="./assets/2.JPG">
+<span class="drop">“L</span>evy” is a wonky word for what’s essentially a tax that’s assessed, or levied, on the value of a taxpayer’s property.  Here’s an example of how levies work: A school district has to heat its buildings so students and teachers don’t freeze in the winter. Let’s say that costs $1,000 per school per year. But let’s also say the price of oil increases, therefore heating costs increase, and now the district has to pay $2,000 to heat each school. But the state doesn’t take the rising cost of oil into account. It continues to give just $1,000 to heat a school, even though nothing is more basic than a warm classroom. So how does a district cover the extra cost?  Through local property tax levies, which technically are only supposed to be used for extra things like extracurricular activities or extra class periods in high school.
 
 Districts have long asked voters to approve local levies, and then dipped into levy funds when state support for costs like heat, school supplies, buses and teacher salaries fell short. 
 
@@ -39,4 +36,4 @@ It’s not fair&mdash; but what choice do districts have?
 
 The McCleary plaintiffs went with option C. 
 
-<div class="top">Back to top</div>
+<div class="top"><a href="#top"><i class="fa fa-caret-up"></i> Back to top</a></div>

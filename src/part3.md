@@ -1,20 +1,10 @@
-<aside class="sidebar">
-  Here's the court's decision that you can <a href="http://www.courts.wa.gov/opinions/pdf/843627.opn.pdf">read</a>
-</aside>
-
-<aside class="sidebar">
-  Read Washington's full constitution or the full section on education <a href="http://leg.wa.gov/LawsAndAgencyRules/Pages/constitution.aspx">here</a>
-</aside>
-
-In its ruling, the state Supreme Court pointed to one sentence in the state constitution: 
+<span class="drop">I</span>n its <span class="yellow"><a href="http://www.courts.wa.gov/opinions/pdf/843627.opn.pdf">ruling,</a></span> the state Supreme Court pointed to one sentence in the state constitution: 
 
 “It is the paramount duty of the state to make ample provision for the education of all children residing within its borders, without distinction or preference on account of race, color, caste, or sex.”
 
-<img src="./assets/4.JPG">
-
 That makes it very clear: The state &mdash; not local school districts, not the federal government &mdash; needs to cover the costs of a basic education for Washington’s schoolchildren. In fact, Washington has one of the strongest obligations to fund public education in the nation. 
 
-The state Supreme Court’s role is to enforce the constitution. And after weeks of testimony about what the state’s on the hook to cover, the justices agreed with the plaintiffs:  The state was falling short, forcing local districts to pick up the tab. 
+The state Supreme Court’s role is to enforce the <span class="yellow"><a href="http://leg.wa.gov/LawsAndAgencyRules/Documents/12-2012-WAStateConstitution.pdf">constitution.</a></span> And after weeks of testimony about what the state’s on the hook to cover, the justices agreed with the plaintiffs:  The state was falling short, forcing local districts to pick up the tab. 
 
 The state, the justices wrote, had failed to meet its constitutional duty by “consistently providing school districts with a level of resources that falls short of the actual costs of the basic education program.”
 
@@ -29,4 +19,4 @@ The McCleary case is the latest chapter in a long-running argument over how much
 So why are we having a similar battle over education funding today? Part of the answer lies in levies.
 
 
-<div class="top">Back to top</div>
+<div class="top"><a href="#top"><i class="fa fa-caret-up"></i> Back to top</a></div>

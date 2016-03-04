@@ -9,13 +9,15 @@
     <script src="//cdn.livefyre.com/Livefyre.js"></script>
     <%= t.include("partials/_head.html") %>
   </head>
-  <body>
+  <body id="top">
 
     <%= t.include("./partials/_nav.html") %>
 
+    <%= t.include("./partials/_ad.html", { type: "banner" }) %>
+
     <div class="header">
       <div class="title">
-        <span class="yellow">What does it mean<br>to fully fund</span><span class="orange">education?<div class="pointer"></div></span>
+        <img src="./assets/fundEdu_headers-01.jpg">
       </div>
     </div>
 
@@ -23,9 +25,9 @@
       <%= markdown.part1 %>
     </section>
 
-    <div class="header">
+    <div class="header white">
       <div class="title">
-        <span class="yellow">What's the</span><br><span class="orange">McCleary case?<div class="pointer"></div></span>
+        <img src="./assets/fundEdu_headers-02.jpg">
       </div>
     </div>
 
@@ -33,9 +35,9 @@
       <%= markdown.part2 %>
     </section>
 
-    <div class="header">
+    <div class="header white">
       <div class="title">
-        <span class="yellow">Why did the</span><br><span class="orange">McCleary coalition win?<div class="pointer"></div></span>
+        <img src="./assets/fundEdu_headers-03.jpg">
       </div>
     </div>
 
@@ -43,9 +45,9 @@
       <%= markdown.part3 %>
     </section>
 
-    <div class="header">
+    <div class="header white">
       <div class="title">
-        <span class="yellow">What are levies and</span><br><span class="orange">why do they matter?<div class="pointer"></div></span>
+        <img src="./assets/fundEdu_headers-04.jpg">
       </div>
     </div>
 
@@ -53,9 +55,9 @@
       <%= markdown.part4 %>
     </section>
 
-    <div class="header">
+    <div class="header white">
       <div class="title">
-        <span class="yellow">Why all the focus on</span><br><span class="orange">“basic” education?<div class="pointer"></div></span>
+        <img src="./assets/fundEdu_headers-05.jpg">
       </div>
     </div>
 
@@ -63,9 +65,9 @@
       <%= markdown.part5 %>
     </section>
 
-    <div class="header">
+    <div class="header white">
       <div class="title">
-        <span class="yellow">How does the state decide how much</span><span class="orange">to give each school district?<div class="pointer"></div></span>
+        <img src="./assets/fundEdu_headers-06.jpg">
       </div>
     </div>
 
@@ -73,9 +75,9 @@
       <%= markdown.part6 %>
     </section>
 
-    <div class="header">
+    <div class="header white">
       <div class="title">
-        <span class="yellow">So what does it mean to fully fund education in</span><span class="orange">Washington state?<div class="pointer"></div></span>
+        <img src="./assets/fundEdu_headers-07.jpg">
       </div>
     </div>
 
@@ -85,7 +87,7 @@
 
     <div class="header">
       <div class="title">
-        <span class="yellow">So...</span><span class="orange">now what?<div class="pointer"></div></span>
+        <img src="./assets/fundEdu_headers-08.jpg">
       </div>
     </div>
 
@@ -93,22 +95,15 @@
       <%= markdown.part8 %>
     </section>
     
-    <div class="comments" id="livefyre-app-custom-1456272446197"></div>
+    <%= t.include("partials/_comments.html", {article: "custom-1456272446197"}) %>
 
-    <script>
-      (function() {
-        Livefyre.require(['fyre.conv#3'], function(Conv) {
-          new Conv({
-            network: 'seattletimes.fyre.co'
-          }, [{
-            app: 'main',
-            siteId: '316317',
-            articleId: 'custom-1456272446197',
-            el: 'livefyre-app-custom-1456272446197',
-          }], function (widget) { });
-        });
-      }());
-    </script>
+    <div class="ad-bottom"><%= t.include("./partials/_ad.html", { type: "bannerBottom" }) %></div>
+
+    <footer>
+      <a class="logo" href="http://www.seattletimes.com">
+        <img src="./assets/seattletimes.svg">
+      </a>
+    </footer>
 
     <script src="app.js" async></script>
     <% if (json.project.production) { %>

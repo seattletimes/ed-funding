@@ -1,7 +1,7 @@
 @import "seattletimes";
 @import (inline) "npm://chartist/dist/chartist.min.css";
 
-@light: #fffdb3;
+@light: #F5ECAF;
 @yellow: #EDDC4B;
 @orange: #F9A75F;
 
@@ -17,13 +17,24 @@ body {
   background: @light;
   font-size: 80px;
   font-weight: bold;
-  height: 500px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  &.white {
+    background: white;
+  }
+
+  @media @tablet {
+    background: white;
+  }
+
+  @media @mobile {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
 
   .title {
     max-width: 1050px;
     margin: auto;
-    padding-top: 5%;
   }
 
   .yellow, .orange {
@@ -39,12 +50,51 @@ body {
     bottom: -20%;
     left: 50px;
     transform: rotate(45deg);
+
+    @media @mobile {
+      height: 25px;
+      width: 25px;
+    }
+  }
+}
+
+.byline {
+  font-weight: bold;
+  line-height: 1em;
+  font-size: 18px;
+
+  @media @mobile {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+}
+.role {
+  font-style: italic;
+  font-size: 16px;
+  @media @mobile {
+    font-size: 14px;
+  }
+}
+.dateline {
+  font-family: @df-sans;
+  font-size: 16px;
+  color: @df-middle-gray;
+
+  @media @mobile {
+    padding-bottom: 15px;
+    font-size: 14px;
   }
 }
 
 .yellow {
   background-color: @yellow;
   padding: 0 5px;
+  transition: background .1s linear;
+}
+section .yellow {
+  &:hover {
+    background: @light;
+  }
 }
 .orange {
   background-color: @orange;
@@ -58,16 +108,42 @@ body {
   float: left;
   vertical-align: top;
   line-height: 1;
-  padding: 4px 14px 6px 10px;
+  padding-right: 8px;
+  line-height: .75em;
+
+  @media @tablet {
+    font-size: 74px;
+  }
+
+  @media @mobile {
+    font-size: 60px;
+    line-height: .8em;
+    padding-top: 2px;
+  }
 }
 
 .comments, section {
   max-width: 1020px;
   margin: auto;
+
+  padding: 5px;
 }
 
 section {
-  font-size: 20px;
+  font-size: 19px;
+  line-height: 1.6em;
+
+  @media (max-width: 1050px) {
+    padding: 0 20px;
+  }
+  @media @tablet {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+  @media @mobile {
+    font-size: 16px;
+    padding: 0 5px;
+  }
 
   > * {
     width: 66%;
@@ -75,6 +151,17 @@ section {
     @media @tablet {
       width: 100%;
     }
+  }
+}
+
+.mccleary img {
+  @media @tablet {
+    max-width: 66%;
+  }
+
+  @media (max-width: 660px) {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -86,6 +173,83 @@ aside.sidebar {
   clear: both;
   padding-left: 40px;
 
+  &.nonmobile {
+    @media @mobile {
+      display: none;
+    }
+  }
+  &.mobile {
+    display: none;
+    @media @mobile {
+      display: block;
+    }
+  }
+
+  &.nonbreak {
+    @media (max-width: 660px) {
+      display: none;
+    }
+  }
+  &.break {
+    display: none;
+    width: 100%;
+    padding: 0 !important;
+    padding-bottom: 20px !important;
+
+    @media (max-width: 660px) {
+      display: block;
+    }
+
+    @media @mobile {
+      font-size: 12px;
+    }
+  }
+
+  &.info {
+    font-size: 14px;
+    line-height: 1.7em;
+  }
+
+  &.caption {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5em;
+    padding-left: 10px;
+    color: @df-middle-gray;
+    padding-top: 10%;
+    font-style: italic;
+
+    @media @tablet {
+      font-size: 13px;
+    }
+  }
+
+  &.links {
+    .title {
+      font-weight: bold;
+      padding-top: 15px;
+      font-size: 22px;
+      padding-bottom: 5px;
+    }
+
+    line-height: 1.4em;
+    font-size: 16px;
+    font-weight: 400;
+
+    .link {
+      padding-top: 8px;
+    }
+  }
+
+  @media @mobile {
+    width: 100%;
+    padding: 0 0 15px 0;
+
+    img {
+      max-width: 200px;
+    }
+  }
+
   a {
     color: darken(@orange, 20%);
     transition: color .1s linear;
@@ -94,51 +258,161 @@ aside.sidebar {
       color: darken(@orange, 35%);
     }
   }
+
+  .fa {
+    padding-left: 3px;
+  }
 }
 
+.block-box {
+  margin: 20px 0 40px 0;
+  padding: 25px 30px;
+  background: @light;
+  width: 55%;
+
+  @media @tablet {
+    width: 75%;
+  }
+
+  @media @mobile {
+    width: 100%;
+    padding: 20px 10px;
+  }
+}
+.checklist .block {
+  border-bottom: 2px solid white;
+  padding: 20px 0;
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  @media @mobile {
+    padding: 20px 10px;
+    font-size: 16px;
+  }
+}
 .block {
   background: @light;
-  padding: 30px;
-  font-size: 16px;
+  padding: 15px 0;
+  font-size: 17px;
   line-height: 1.5em;
-  margin-bottom: 20px;
+
+  &:first-child {
+    padding-top: 5px;
+  }
+
+  @media @mobile {
+    padding: 10px 20px;
+  }
 
   ul {
     margin: 0;
+    font-size: 16px;
+    
+    @media @mobile {
+      padding-left: 20px;
+    }
   }
 
   .hed {
     font-weight: bold;
-    font-size: 24px;
-    padding-bottom: 10px;
+    font-size: 20px;
+    padding-bottom: 8px;
+
+    @media @mobile {
+      font-size: 20px;
+    }
   }
+}
+.flex-container {
+  .display-flex();
+  padding-bottom: 8px;
+}
+.left {
+  .flex(5);
+  font-weight: bold;
+}
+.right {
+  .flex(2);
+  font-weight: bold;
+  text-align: right;
 }
 
 .options {
   .display-flex();
+  padding-bottom: 10px;
+
+  @media @mobile {
+    display: block;
+  }
+}
+.money .option {
+  font-size: 34px;
+  font-weight: bold;
+  .bold {
+    font-size: 14px;
+  }
 }
 .option {
   .flex(1);
-  background: @light;
   display: block;
   float: left;
-  padding: 25px 30px;
-  font-size: 16px;
+  padding: 20px 30px;
+  font-size: 17px;
   line-height: 1.5em;
   text-align: center;
-  margin-right: 20px;
+  border-right: 2px solid @df-border-gray;
+
+  &:last-child {
+    border-right: 0px;
+  }
+
+  @media @mobile {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 15px;
+    border-right: 0px;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
 
   .bold {
     font-weight: bold;
-    font-size: 24px;
-    padding-bottom: 10px;
+    font-size: 26px;
+    padding: 6px 6px 3px 6px;
+    line-height: 1.2em;
+    background: @orange;
+    margin-bottom: 10px;
+
+    @media @mobile {
+      font-size: 20px;
+      padding-bottom: 5px;
+      max-width: 100px;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+  }
+
+  .extra {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.4em;
   }
 }
 
 .estimates {
   position: relative;
   width: 85%;
-  margin: 80px 0;
+  margin: 50px 0 80px 0;
+
+  @media @mobile {
+    margin: 10px 0;
+  }
 
   .text {
     font-size: 18px;
@@ -147,6 +421,8 @@ aside.sidebar {
     .estimate {
       margin: 40px;
       width: 40%;
+      padding-bottom: 20px;
+      border-bottom: 2px solid @df-border-gray;
 
       &.first {
         padding-top: 10%;
@@ -158,7 +434,7 @@ aside.sidebar {
       }
 
       &.third {
-        margin-top: 70%;
+        margin-top: 20%;
         width: 65%;
       }
 
@@ -180,31 +456,132 @@ aside.sidebar {
       color: @orange;
       font-size: 35px;
       padding-bottom: 8px;
+
+      .fa {
+        padding-left: 4px;
+      }
     }
   }
 
   .bars {
-    position: absolute;
-    height: 100%;
+    height: 2500px;
     top: 0;
-    right: 0;
-    width: 50%;
+    width: 45%;
+    border-top: 2px solid @df-border-gray;
+
+    @media @mobile {
+      width: 33%;
+    }
 
     .bar {
-      float: right;
-      background: @orange;
-      margin-left: 20px;
-      width: 19%;
+      float: left;
+      background: lighten(@orange, 15%);
+      margin: 0 10px;
+      width: 75px;
+      position: relative;
+
+      @media (max-width: 1050px) {
+        width: 50px;
+      }
+
+      @media @tablet {
+        width: 30px;
+        margin: 0 5px;
+      }
+
+      @media @mobile {
+        width: 15px;
+        margin: 0 3px;
+      }
 
       &.indefinite {
-        background-image: linear-gradient(@orange, @orange, @orange, @orange, @orange, @orange, white);
+        background-image: linear-gradient(lighten(@orange, 15%), lighten(@orange, 15%), lighten(@orange, 15%), lighten(@orange, 15%), lighten(@orange, 15%), white);
       }
-      
+
+      .inset {
+        margin-left: 50px;
+        position: absolute;
+        top: 40px;
+        left: 100%;
+        width: 270px;
+
+        @media @mobile {
+          margin-left: 20px;
+          width: 200px;
+        }
+      }
+
+      .label {
+        margin-left: 30px;
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        font-size: 16px;
+        width: 500px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid @df-border-gray;
+
+        @media (max-width: 840px) {
+          width: 400px;
+        }
+
+        @media @tablet {
+          width: 300px;
+          font-size: 15px;
+          line-height: 1.6em;
+        }
+
+        @media @mobile {
+          margin-left: 20px;
+          font-size: 14px;
+          width: 200px;
+
+          .second {
+            width: 225px;
+          }
+
+          .third {
+            width: 240px;
+          }
+
+          .fourth {
+            width: 250px;
+          }
+        }
+      }
+
+      .money {
+        color: @orange;
+        font-size: 35px;
+        padding-bottom: 8px;
+
+        .fa {
+          padding-left: 4px;
+        }
+
+        @media @tablet {
+          font-size: 28px;
+        }
+
+        @media @mobile {
+          font-size: 22px;
+        }
+      }
+
       &.highlighted {
+        font-weight: bold;
         background: darken(@orange, 20%);
 
+        .money {
+          color: darken(@orange, 20%);
+        }
+
+        .inset {
+          font-weight: 400 !important;
+        }
+
         &.indefinite {
-          background-image: linear-gradient(darken(@orange, 20%), darken(@orange, 20%), darken(@orange, 20%), darken(@orange, 20%), darken(@orange, 20%), darken(@orange, 20%), white);
+          background-image: linear-gradient(darken(@orange, 20%), darken(@orange, 20%), darken(@orange, 20%), darken(@orange, 20%), darken(@orange, 20%), white);
         }
       }
     }
@@ -213,9 +590,71 @@ aside.sidebar {
 
 .top {
   text-align: right;
+  cursor: pointer;
   font-family: @df-sans;
   font-weight: bold;
   color: @df-dark-gray;
   padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  a {
+    transition: color .1s linear;
+  }
+
+  a:hover {
+    color: darken(@orange, 20%);
+  }
+
+  .fa {
+    padding-right: 2px;
+  }
+
+  @media @mobile {
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+}
+
+.contact {
+  font-style: italic;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  a {
+    color: darken(@orange, 20%);
+    transition: color .1s linear;
+    &:hover {
+      color: darken(@orange, 40%);
+    }
+  }
+}
+
+.source {
+  color: #AAA;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 1.3em;
+  font-family: @df-sans;
+  padding-top: 5px;
+}
+
+.credits {
+  padding-top: 30px;
+
+  .title {
+    padding-bottom: 10px !important;
+  }
+}
+
+.more {
+  font-weight: bold;
+  font-size: 22px;
+  padding-top: 50px;
+}
+
+.ad-bottom {
+  @media @mobile {
+    display: none;
+  }
 }
 

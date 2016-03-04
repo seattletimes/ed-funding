@@ -31,13 +31,10 @@ main {
 
 a {
   color: black;
-  font-weight: bold;
+  // font-weight: bold;
   text-decoration: none;
   outline: 0 !important;
-  transition: color .1s linear;
-  &:hover {
-    color: darken(@orange, 20%);
-  }
+  transition: background .1s linear;
   img {
     border: none;
   }
@@ -145,6 +142,7 @@ nav.main-nav {
 .ad {
   text-align: center;
   padding: 16px 0;
+  background: darken(#55382f, 10%);
 
   &.square {
     float: right;
@@ -157,16 +155,16 @@ nav.main-nav {
 }
 
 .show-comments {
-  border: 1px solid @df-blue;
+  border: 1px solid @df-orange;
   padding: 20px;
   text-align: center;
   text-transform: uppercase;
   font-family: @df-sans;
   font-weight: bold;
   font-size: 15px;
-  color: @df-blue;
+  color: @df-orange;
   cursor: pointer;
-  margin: 20px 0;
+  margin: 20px 0 40px 0;
 }
 
 .thin-div {
@@ -219,8 +217,8 @@ nav.main-nav {
   }
 }
 
-footer.nav-bottom {
-  background: black;
+footer {
+  background: white;
   opacity: 0.95;
   padding: 8px 8px 4px 8px;
   position: relative;
