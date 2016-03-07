@@ -2,7 +2,7 @@
 
 But let’s start with what the state has been spending since 2007, the year the McCleary case was filed. Here’s the picture since then, after adjusting for inflation. And you can see that the Legislature has made some progress, given the larger number in 2014-15.
 
-<strong>Spending per pupil (adjusted for inflation):</strong>
+**Spending per pupil (adjusted for inflation)**:
 
 <div class="money options">
   <div class="option">
@@ -24,7 +24,7 @@ But let’s start with what the state has been spending since 2007, the year the
   </div>
 </div>
 
-<div class="source">Data from the Office of Superintendent of Public Instruction and the Legislative Evaluation and Accountability Program (LEAP) Committee; inflation adjustment by LEAP</div>
+<div class="source">Data from the Office of Superintendent of Public Instruction and the Legislative Evaluation and Accountability Program (LEAP) Committee; inflation adjustment by LEAP using IPD, the Implicit Price Deflator for Personal Consumption</div>
 
 (One note about these numbers: The state doesn’t keep track of exactly how much is spent per pupil. Rather it keeps track of state general fund revenues, or how much money school districts receive from the state. The total state revenues per pupil are a good proxy for total state spending per pupil.)
 
